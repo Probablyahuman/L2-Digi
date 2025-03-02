@@ -10,3 +10,7 @@ Relevant links:
 [Trello Board](https://trello.com/b/RA8jkq9B/level-2-digi-project)
 
 [Design Sprint](https://docs.google.com/document/d/1aqRSnieb-PdSE_dDXkIPuY7-3dEsz39P7rURMzAmo3c/edit?tab=t.0#heading=h.9faeu2syncva)
+
+[Prototypes](https://docs.google.com/presentation/d/1_-Oi6vaB1xt0N_Uyckq-zbkkAYZ_Qh9EEUM2RDUebkM/edit#slide=id.p)
+
+[Relevant Drive Folder](https://drive.google.com/drive/u/0/folders/1JU2eAhpaFh0kGX3CtP2GVOMkwRiNAUkU)
