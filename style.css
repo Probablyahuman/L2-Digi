@@ -5,35 +5,54 @@ body {
 p {
   color: #45484a;
 }
+
 .nav {
-  padding: 2.5vw;
+  padding: 5vh;
   display: flex;
+}
+
+img {
+  width: 8vh;
+  height: 8vh;
+}
+
+.nav-box {
+  
 }
 
 #ans-feedback-box {
   background-color: #92c99a;
-  height: 5vw;
+  height: 10vh;
   width: auto;
-  border-radius: 2.5vw;
+  border-radius: 5vh;
   border-style: solid;
   border-color: #45484a;
-  border-width: 0.1vw;
-  padding: 0.25vw;
+  border-width: 0.2vh;
+  padding: 0.5vh;
 }
 
 #tick-box {
   float: left;
   background-color: #f0f0f0;
-  color: #109648;
-  height: 4vw;
-  width: 4vw;
-  border-radius: 2vw;
-  margin: 0.25vw;
+  height: 8vh;
+  width: 8vh;
+  border-radius: 4vh;
+  margin: 0.5vh;
 }
 
 #ans-feedback {
   float: right;
-  margin: 0.5vw;
+  margin: 1vh;
   vertical-align: central;
-  font-size: 1.15vw;
+  font-size: 2.3vh;
 }
+
+#tick {
+  color: #109648;
+  font-size: 6vh;
+  vertical-align: central;
+  margin-left: 2vh;
+  margin-top: -0.4vh;
+}
+
+#
