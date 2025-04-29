@@ -1,3 +1,39 @@
 body {
   background-color: #f0f0f0;
 }
+
+p {
+  color: #45484a;
+}
+.nav {
+  padding: 2.5vw;
+  display: flex;
+}
+
+#ans-feedback-box {
+  background-color: #92c99a;
+  height: 5vw;
+  width: auto;
+  border-radius: 2.5vw;
+  border-style: solid;
+  border-color: #45484a;
+  border-width: 0.1vw;
+  padding: 0.25vw;
+}
+
+#tick-box {
+  float: left;
+  background-color: #f0f0f0;
+  color: #109648;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 2vw;
+  margin: 0.25vw;
+}
+
+#ans-feedback {
+  float: right;
+  margin: 0.5vw;
+  vertical-align: central;
+  font-size: 1.15vw;
+}
