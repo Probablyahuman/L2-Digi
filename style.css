@@ -12,8 +12,8 @@ p {
 }
 
 .nav-box {
-  width: 10vh;
-  height: 10vh;
+  width: 15vh;
+  height: 15vh;
 }
 
 .shift-to-right {
@@ -23,49 +23,49 @@ p {
 
 #ans-feedback-box {
   background-color: #92c99a;
-  height: 10vh;
+  height: 15vh;
   width: auto;
-  border-radius: 5vh;
+  border-radius: 7.5vh;
   border-style: solid;
   border-color: #45484a;
   border-width: 0.2vh;
-  padding: 0.5vh;
+  padding: 0.75vh;
 }
 
 #tick-box {
   float: left;
   background-color: #f0f0f0;
-  height: 8vh;
-  width: 8vh;
-  border-radius: 4vh;
-  margin: 0.5vh;
+  height: 12vh;
+  width: 12vh;
+  border-radius: 6vh;
+  margin: 0.75vh;
 }
 
 #ans-feedback {
   float: right;
-  margin: 1vh;
+  margin: 1.5vh;
   vertical-align: central;
-  font-size: 2.3vh;
+  font-size: 3.5vh;
 }
 
 #tick {
   color: #109648;
-  font-size: 6vh;
+  font-size: 9vh;
   vertical-align: central;
   margin-left: 2vh;
-  margin-top: -0.4vh;
+  margin-top: -0.6vh;
 }
 
 #chart-icon {
-  width: 10vh;
-  height: 10vh;
+  width: 15vh;
+  height: 15vh;
   margin: 0;
   float: right;
 }
 
 #gear-icon {
-  width: 12vh;
-  height: 12vh;
-  margin: -1vh;
+  width: 18vh;
+  height: 18vh;
+  margin: -1.5vh;
   float: right;
 }
