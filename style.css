@@ -59,13 +59,13 @@ p {
 #chart-icon {
   width: 12vh;
   height: 12vh;
-  margin: 0;
+  margin-right: 1vh;
   float: right;
 }
 
 #gear-icon {
-  width: 14vh;
-  height: 14vh;
-  margin: -1vh;
+  width: 14.5vh;
+  height: 14.5vh;
+  margin: -1.25vh;
   float: right;
 }
