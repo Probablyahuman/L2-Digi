@@ -29,7 +29,7 @@ p {
   border-style: solid;
   border-color: #45484a;
   border-width: 0.2vh;
-  padding: 0.6vh;
+  padding: 0.5vh;
 }
 
 #tick-box {
@@ -38,7 +38,7 @@ p {
   height: 10vh;
   width: 10vh;
   border-radius: 5vh;
-  margin: 0.6vh;
+  margin: 0.5vh;
 }
 
 #ans-feedback {
