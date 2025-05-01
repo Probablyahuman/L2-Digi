@@ -6,6 +6,18 @@ p {
   color: #45484a;
 }
 
+h3 {
+  text-align: center;
+  color: #45484a;
+  font-size: 5vh;
+}
+
+h2 {
+  text-align: center;
+  color: #45484a;
+  font-size: 10vh;
+}
+
 .nav {
   padding: 4vh;
   display: flex;
