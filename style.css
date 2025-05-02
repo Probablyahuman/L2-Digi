@@ -21,14 +21,15 @@ h2 {
   line-height: 12vh;
 }
 
-.nav {
+.nav, .footer {
   padding: 4vh;
   display: flex;
+  width: 100%;
 }
 
 .footer {
-  padding: 4vh;
-  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 
 .nav-box {
@@ -41,27 +42,11 @@ h2 {
   margin-right: 0;
 }
 
-.main-text {
+.content {
   
 }
 
-#continue-button {
-  background-color: #92c99a;
-  margin-left: auto;
-  height: 12vh;
-  width: auto;
-  border-radius: 4vh;
-  border-style: solid;
-  border-color: #45484a;
-  border-width: 0.2vh;
-  padding: 0.5vh;
-}
-
-#continue-text {
-  
-}
-
-#ans-feedback-box {
+#continue-button, #ans-feedback-box {
   background-color: #92c99a;
   height: 12vh;
   width: auto;
@@ -71,6 +56,16 @@ h2 {
   border-width: 0.2vh;
   padding: 0.5vh;
 }
+
+#continue-button {
+  margin-left: auto;
+  border-radius: 4vh;
+}
+
+#continue-text {
+  
+}
+
 
 #tick-box {
   float: left;
