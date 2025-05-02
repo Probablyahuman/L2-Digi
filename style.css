@@ -10,15 +10,23 @@ h3 {
   text-align: center;
   color: #45484a;
   font-size: 5vh;
+  margin: 0 3vw 0 3vw;
 }
 
 h2 {
   text-align: center;
   color: #45484a;
   font-size: 10vh;
+  margin: 0 3vw 0 3vw;
+  line-height: 12vh;
 }
 
 .nav {
+  padding: 4vh;
+  display: flex;
+}
+
+.footer {
   padding: 4vh;
   display: flex;
 }
@@ -31,6 +39,26 @@ h2 {
 .shift-to-right {
   margin-left: auto;
   margin-right: 0;
+}
+
+.main-text {
+  
+}
+
+#continue-button {
+  background-color: #92c99a;
+  margin-left: auto;
+  height: 12vh;
+  width: auto;
+  border-radius: 4vh;
+  border-style: solid;
+  border-color: #45484a;
+  border-width: 0.2vh;
+  padding: 0.5vh;
+}
+
+#continue-text {
+  
 }
 
 #ans-feedback-box {
