@@ -1,3 +1,9 @@
+
+/*try css calc for sizing in future? */
+
+
+
+
 body {
   background-color: #f0f0f0;
 }
@@ -59,13 +65,12 @@ h2 {
 
 #continue-button {
   margin-left: auto;
+  min-width: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4vh;
 }
-
-#continue-text {
-  
-}
-
 
 #tick-box {
   float: left;
@@ -76,12 +81,18 @@ h2 {
   margin: 0.5vh;
 }
 
-#ans-feedback {
-  float: right;
+#ans-feedback, #continue-text {
+  float: right;   /*Only needed for ans-feedback, does not affect continue-text*/
   margin: 1.2vh;
-  vertical-align: central;
+  vertical-align: middle;
   font-size: 2.8vh;
 }
+
+#continue-text {
+  font-size: 4vh;
+  margin: 0 4vw 0 4vw;
+}
+
 
 #tick {
   color: #109648;
