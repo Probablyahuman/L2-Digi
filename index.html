@@ -7,9 +7,12 @@
 </head>
 
 <body>
-<div class = "content">
+<div class = "main">
+<!--The content of the page, including nav, but not footer,
+    so that this div can be forced to expand with flexbox
+    and force the footer to bottom of page-->
   
-<div class = "nav">
+<nav>
   <div id = "ans-feedback-box">
     <div id = "tick-box">
       <p id = "tick">✓</p>
@@ -26,23 +29,27 @@
   </div>
   
   <div class = "nav-box">
-    <img src="icons/gear.svg" alt="Settings" id="gear-icon">
+    <img src = "icons/gear.svg" alt="Settings" id="gear-icon">
   </div>
-</div>
+</nav>
 
-<div class = "content">
+<section class = "content">
   <h3 id = "instruction">Enter the word for:</h3>
 
-  <h2 id = "question">"A particular instance of something that is representative of a group, or an illustration of something that's been generally described. A particular instance of something that is representative of a group, or an illustration of something that's been generally described."</h2>
-</div>
+  <h2 id = "question">"A particular instance of something that is representative of a group, or an illustration of something that's been generally described."</h2>
+  
+  <div class = "input-box">
+    <input type = "text">
+  </div>
+</section>
 
 </div>
 
-<div class = "footer">
+<footer>
   <div id = "continue-button">
     <p id = "continue-text">Continue</p>
   </div>
-</div>
+</footer>
 
 </body>
 </html>

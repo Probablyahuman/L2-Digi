@@ -31,14 +31,10 @@ h2 {
   line-height: 12vh;
 }
 
-.nav, .footer {
+nav, footer {
   padding: 4vh;
   display: flex;
   width: 100%;
-}
-
-.footer {
-  
 }
 
 .nav-box {
@@ -51,7 +47,7 @@ h2 {
   margin-right: 0;
 }
 
-.content {
+.main {
   flex: 1 0;
 }
 
