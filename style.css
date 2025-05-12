@@ -49,6 +49,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(6%) saturate(283%) hue-rotate(161deg) brightness(90%) contrast(96%);
+  /* Filter calculated with https://codepen.io/sosuke/pen/Pjoqqp with target colour as #45484a */
+}
+
 .nav-box {
   width: 12vh;
   height: 12vh;
@@ -110,8 +115,8 @@ button {
   color: #109648;
   font-size: 7vh;
   vertical-align: central;
-  margin-left: 2.4vh;
-  margin-top: -0.5vh;
+  margin-left: 0.5vh;
+  margin-top: 0;
 }
 
 #chart-icon {
