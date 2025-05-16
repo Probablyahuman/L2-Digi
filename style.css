@@ -119,26 +119,24 @@ img {
   margin-top: 0;
 }
 
-#chart-icon {
+#chart-button, #gear-button {
   width: 12vh;
   height: 12vh;
-  margin-right: 1vh;
-  float: right;
+  padding: 1vh;
 }
 
-#chart-button {
-  padding: -0.75vh;
+#chart-icon {
+  width: 11vh;
+  height: 11vh;
+  margin: -0.5vh;
+  float: right;
 }
 
 #gear-icon {
-  width: 14.5vh;
-  height: 14.5vh;
+  width: 13vh;
+  height: 13vh;
   margin: -1.5vh;
   float: right;
-}
-
-#gear-button {
-  padding: -2vh;
 }
 
 #ans-input {
