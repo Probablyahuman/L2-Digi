@@ -4,13 +4,14 @@
 <head>
 <link rel = "stylesheet" href = "https://www.w3schools.com/w3css/5/w3.css">
 <link rel = "stylesheet" href = "style.css">
+<script src="script.js"></script>
 </head>
 
 <body>
 
-<div class = "w3-modal">
+<div class = "w3-modal" id = "ans-feedback-modal">
   <div class = "w3-modal-content">
-    
+    <p>hello...</p>
   </div>
 </div>
 
@@ -20,7 +21,7 @@
     and force the footer to bottom of page-->
   
 <nav>
-  <button id = "ans-feedback-box">
+  <button id = "ans-feedback-box" onclick="modalDisplay(1)">
     <div id = "tick-box">
       <p id = "tick">✓</p>
     </div>
