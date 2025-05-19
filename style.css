@@ -54,6 +54,10 @@ img {
   /* Filter calculated with https://codepen.io/sosuke/pen/Pjoqqp with target colour as #45484a */
 }
 
+.w3-modal {
+  position: fixed;
+}
+
 .nav-box {
   width: 14vh;
   height: 14vh;
