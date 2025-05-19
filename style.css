@@ -56,6 +56,7 @@ img {
 
 .w3-modal {
   position: fixed;
+  overflow: auto;
 }
 
 .nav-box {
