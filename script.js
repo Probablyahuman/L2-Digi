@@ -6,7 +6,7 @@ function modalDisplay(newState) {
   if (newState) {
     document.getElementById("ans-feedback-modal").style.display = "block";
   } else {
-    modal.style.display = "none";
+    document.getElementById("ans-feedback-modal").style.display = "none";
   }
   
   /*alert('Button clicked!');*/
