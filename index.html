@@ -44,7 +44,7 @@
     and force the footer to bottom of page-->
   
 <nav>
-  <button id = "ans-feedback-box" onclick = "modalDisplay('ans-feedback-modal')">
+  <button id = "ans-feedback-box" onclick = "modalDisplay('ans-feedback-modal')" accesskey="i">
     <span id = "tick-box">
       ✓
     </span>
@@ -55,12 +55,12 @@
     
   </div>
   
-  <button class = "nav-box" id="chart-button">
-    <img src="icons/chart.svg" alt="Statistics" id="chart-icon" onclick = "modalDisplay('statistics-modal')">
+  <button class = "nav-box" id="chart-button" accesskey = "t" onclick = "modalDisplay('statistics-modal')">
+    <img src="icons/chart.svg" alt="Statistics" id="chart-icon">
   </button>
   
-  <button class = "nav-box" id="gear-button">
-    <img src = "icons/gear.svg" alt="Settings" id="gear-icon" onclick = "modalDisplay('settings-modal')">
+  <button class = "nav-box" id="gear-button" accesskey = "s" onclick = "modalDisplay('settings-modal')">
+    <img src = "icons/gear.svg" alt="Settings" id="gear-icon">
   </button>
 </nav>
 
