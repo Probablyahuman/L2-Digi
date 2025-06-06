@@ -1,7 +1,7 @@
 console.log("js launched");
 let modal; /*A variable to handle modals, either 0 for no modal, or the id of the current modal*/
 let lastKey; /*Stores the last key pressed, used for managing enter behaviour*/
-let ansInput = document.getElementById("ans-input");
+const ansInput = document.getElementById("ans-input");
 console.log(ansInput);
 
 function modalDisplay(newState) {
@@ -24,6 +24,19 @@ function modalDisplay(newState) {
   }
 }
 
+function ansSubmission(inputElement) {
+  /*A handler for when the answer is submitted */
+  if (inputElement.value) {
+    alert('You answered "' + inputElement.value + '"');
+    
+    inputElement.value = "";
+  } else {
+    alert("Input submitted blank.");
+  }
+  
+  inputElement.focus();
+}
+
 document.addEventListener("click", function(e) {
   /*Close the current modal when clicking on the greyed background of it */
   if (event.target == modal) {
@@ -40,10 +53,11 @@ window.addEventListener("keydown", function(e) {
       if (lastKey != 'Tab') {
         if (modal) {
           modalDisplay(0);
-          e.preventDefault();
         } else {
-        alert("hello");
+        ansSubmission(ansInput);
         }
+        
+        e.preventDefault();
       }
       break;
 

@@ -12,9 +12,14 @@
 
 <div class = "w3-modal w3-animate-top" id = "ans-feedback-modal">
   <div class = "w3-modal-content">
-    <div class="w3-container">
-    <button class="w3-button w3-display-topright" onclick = "modalDisplay(0)">&times;</button>
-      <p>ans-feedback...</p>
+    <div class="modal-header">
+      <span class = "tick-box small-tick">
+        &#10003;
+      </span>
+      <span>
+        Correct
+      </span>
+      <button class="w3-button w3-display-topright" onclick = "modalDisplay(0)">&times;</button>
     </div>
   </div>
 </div>
@@ -45,8 +50,8 @@
   
 <nav>
   <button id = "ans-feedback-box" onclick = "modalDisplay('ans-feedback-modal')" accesskey="i">
-    <span id = "tick-box">
-      ✓
+    <span class = "tick-box">
+      &#10003;
     </span>
     <span id = "ans-feedback">Last answer correct,<br>click for more info.</span>
   </button>
@@ -75,7 +80,7 @@
 </div>
 
 <footer>
-  <button id = "continue-button">
+  <button id = "continue-button" onclick = "ansSubmission(ansInput)">
     <span id = "continue-text">Continue</span>
   </button>
 </footer>
