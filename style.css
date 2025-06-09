@@ -53,6 +53,7 @@ nav {
 
 button {
   cursor: pointer;
+  color: #45484a;
 }
 
 img {
@@ -66,8 +67,30 @@ img {
 }
 
 .w3-modal-content {
-  border-radius: 5vh;
-  min-height: 8vh;
+  border-radius: 5.25vh;
+  padding: 1.5vh;
+}
+
+.modal-header {
+  display: flex;
+}
+
+.modal-title {
+  margin: 0 1vw 0 1vw;
+}
+
+.modal-close {
+  margin-left: auto;
+  font-size: 5vh;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.15s ease;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-box {
@@ -102,7 +125,7 @@ img {
   height: 7.5vh;
   width: 7.5vh;
   border-radius: 3.75vh;
-  margin: 1vh;
+  margin: 0;
   font-size: 5.25vh;
   padding-left: 2vh;
 }
@@ -164,7 +187,7 @@ img {
   margin: 2vh 4vh 0 4vh;
   padding: 3vh;
   font-size: 5vh;
-  width: calc(100% - 2*4vh);
+  width: calc(100% - 8vh);
   height: 12vh;
   border-radius: 4vh;
   background: transparent;
@@ -173,4 +196,8 @@ img {
 
 input:placeholder-shown {
    font-style: italic;
+}
+
+.modal-close:hover {
+  background-color: rgba(128, 128, 128, 0.2);
 }
