@@ -18,10 +18,18 @@ function modalDisplay(newState) {
       modal = document.getElementById(newState);
       modal.style.display = "block";
   } else {
-    modal.style.display = "none";
+    fadeOut(modal);
     modal = 0;
     ansInput.focus();
   }
+}
+
+function fadeOut(element) {
+  element.classList.add("fade-out");
+  setTimeout(() => {
+    element.style.display = "none";
+    element.classList.remove("fade-out");
+  }, 100);
 }
 
 function ansSubmission(inputElement) {

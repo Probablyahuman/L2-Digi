@@ -64,28 +64,45 @@ img {
 .w3-modal {
   position: fixed;
   overflow: auto;
+  opacity: 1;
+  transition: opacity 0.1s ease;
+  pointer-events: all;
+}
+
+.w3-modal.fade-out {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .w3-modal-content {
   border-radius: 5.25vh;
   padding: 1.5vh;
+  background-color: #92c99a;
 }
 
 .modal-header {
   display: flex;
 }
 
+.modal-header-divider {
+  width: 85%;
+  height: 1px;
+  background-color: #45484a;
+  margin: 1vh auto;
+}
+
 .modal-title {
-  margin: 0 1vw 0 1vw;
+  margin: 0 1.5vw 0 1.5vw;
 }
 
 .modal-close {
   margin-left: auto;
   font-size: 5vh;
-  height: 100%;
-  aspect-ratio: 1 / 1;
+  height: 7.5vh;
+  width: 7.5vh;
   border-radius: 50%;
   background-color: transparent;
+  font-weight: bold;
   transition: background-color 0.15s ease;
   border: none;
   display: flex;
