@@ -14,6 +14,7 @@ body {
 
 p {
   color: #45484a;
+  font-size: 2.5vh
 }
 
 h3 {
@@ -62,6 +63,7 @@ img {
 }
 
 .w3-modal {
+  padding: 0;
   position: fixed;
   overflow: auto;
   opacity: 1;
@@ -75,6 +77,11 @@ img {
 }
 
 .w3-modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 5vw;
+  min-height: 60vh;
   border-radius: 5.25vh;
   padding: 1.5vh;
   background-color: #92c99a;
@@ -120,11 +127,27 @@ img {
 }
 
 .ans-feedback-info {
+  flex-grow: 1;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr auto 1fr;
+}
+
+.ans-feedback-info > div {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
   
-  
+}
+
+.ans-feedback-info p {
+  margin: 0.5vh 0 0.5vh 0;
+  display: flex;
+  align-items: center;
+}
+
+.ans-feedback-info h3 {
+  margin: -2vh 0 0 0;
 }
 
 .grid-left-top {
@@ -156,6 +179,9 @@ img {
   
 }
 
+.spacer {
+  flex-grow: 1;
+}
 
 .nav-box {
   width: 14vh;
@@ -192,6 +218,11 @@ img {
   margin: 0;
   font-size: 5.25vh;
   padding-left: 2vh;
+}
+
+#alternate-answer-box {
+  display: flex;
+  flex-direction: column;
 }
 
 #continue-button, #ans-feedback-box {
