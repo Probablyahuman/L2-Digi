@@ -11,7 +11,7 @@
 <body>
 
 <div class = "w3-modal w3-animate-top" id = "ans-feedback-modal">
-  <div class = "w3-modal-content">
+  <div class = "w3-modal-content" id = "ans-feedback-modal-content">
     <div class="modal-header">
       <span class = "tick-box small-tick">
         &#10003;
@@ -55,19 +55,51 @@
 
 <div class = "w3-modal w3-animate-top" id = "statistics-modal">
   <div class = "w3-modal-content">
-    <div class="w3-container">
-    <button class="w3-button w3-display-topright" onclick = "modalDisplay(0)">&times;</button>
-      <p>statistics...</p>
+    <div class="modal-header">
+      <img src="icons/chart.svg" alt="Statistics Icon" class="small-icon">
+      <span class = modal-title>
+        Statistics
+      </span>
+      <button class = "modal-close" onclick = "modalDisplay(0)">&times;</button>
     </div>
+    
+    <div class = "horizontal-divider"></div>
+    
+    <div class = "horizontal-divider"></div>
+    
+    <div id = "statistics-list">
+      <div>Questions correct: 74</div>
+      <div>Questions answered: 88</div>
+      <div>Accuracy: 84.1%</div>
+      <div>Current consecutive correct questions: 4</div>
+      <div>Most consecutive correct questions: 10</div>
+      <div>Unique questions: 24</div>
+      <div>Unique questions answered: 24</div>
+      <div>Most accurate question: "A particular instance of something that is representative of a group, or an illustration of something that's been generally described."</div>
+      <div>Most accurate question accuracy: 100%</div>
+      <div>Least accurate question: "Filler text"</div>
+      <div>Least accurate question accuracy: 20%</div>
+      <div>Most encountered question: "Filler text"</div>
+      <div>Most encountered question times encountered: 5</div>
+      <div>Least encountered question: "A particular instance of something that is representative of a group, or an illustration of something that's been generally described."</div>
+      <div>Most encountered question times encountered: 2</div>
+    </div>
+    
   </div>
 </div>
 
 <div class = "w3-modal w3-animate-top" id = "settings-modal">
   <div class = "w3-modal-content">
-    <div class="w3-container">
-    <button class="w3-button w3-display-topright" onclick = "modalDisplay(0)">&times;</button>
-      <p>settings...</p>
+    <div class="modal-header">
+      <img src="icons/gear.svg" alt="Gear Icon" class="small-icon">
+      <span class = modal-title>
+        Settings
+      </span>
+      <button class = "modal-close" onclick = "modalDisplay(0)">&times;</button>
     </div>
+    
+    <div class = "horizontal-divider"></div>
+    
   </div>
 </div>
 
@@ -89,12 +121,12 @@
     
   </div>
   
-  <button class = "nav-box" id="chart-button" accesskey = "t" onclick = "modalDisplay('statistics-modal')">
-    <img src="icons/chart.svg" alt="Statistics" id="chart-icon">
+  <button class = "nav-button" id="chart-button" accesskey = "t" onclick = "modalDisplay('statistics-modal')">
+    <img src="icons/chart.svg" alt="Statistics" class="icon">
   </button>
   
-  <button class = "nav-box" id="gear-button" accesskey = "s" onclick = "modalDisplay('settings-modal')">
-    <img src = "icons/gear.svg" alt="Settings" id="gear-icon">
+  <button class = "nav-button" id="gear-button" accesskey = "s" onclick = "modalDisplay('settings-modal')">
+    <img src = "icons/gear.svg" alt="Settings" class="icon">
   </button>
 </nav>
 

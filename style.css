@@ -55,6 +55,7 @@ nav {
 button {
   cursor: pointer;
   color: #45484a;
+  border: 0;
 }
 
 img {
@@ -84,7 +85,11 @@ img {
   min-height: 60vh;
   border-radius: 5.25vh;
   padding: 1.5vh;
-  background-color: #92c99a;
+  background-color: #e0e0e0;
+}
+
+#ans-feedback-modal-content {
+  background-color: #92c99a; /*Will be changed depending on whether last question answered correctly*/
 }
 
 .modal-header {
@@ -183,7 +188,7 @@ img {
   flex-grow: 1;
 }
 
-.nav-box {
+.nav-button {
   width: 14vh;
   height: 14vh;
 }
@@ -218,6 +223,17 @@ img {
   margin: 0;
   font-size: 5.25vh;
   padding-left: 2vh;
+}
+
+.icon {
+  width: 10vh;
+  height: 10vh;
+  float: right;
+}
+
+.small-icon {
+  width: 7.5vh;
+  height: 7.5vh;
 }
 
 #alternate-answer-box {
@@ -264,20 +280,6 @@ img {
   padding: 1vh;
 }
 
-#chart-icon {
-  width: 11vh;
-  height: 11vh;
-  margin: -0.5vh;
-  float: right;
-}
-
-#gear-icon {
-  width: 13vh;
-  height: 13vh;
-  margin: -1.5vh;
-  float: right;
-}
-
 #ans-input {
   margin: 2vh 4vh 0 4vh;
   padding: 3vh;
@@ -287,6 +289,10 @@ img {
   border-radius: 4vh;
   background: transparent;
   color: #45484a;
+}
+
+#statistics-list {
+  margin: 1vh 3vh 1vh 3vh;
 }
 
 input:placeholder-shown {
