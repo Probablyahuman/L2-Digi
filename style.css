@@ -14,7 +14,7 @@ body {
 
 p {
   color: #45484a;
-  font-size: 2.5vh
+  font-size: 2.5vh;
 }
 
 h3 {
@@ -81,7 +81,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 90vw;
-  margin: 5vw;
+  margin: 5vw auto 5vw auto;
   min-height: 60vh;
   border-radius: 5.25vh;
   padding: 1.5vh;
@@ -102,12 +102,12 @@ img {
 
 .horizontal-divider {
   width: 85%;
-  height: 1px;
+  height: 0.5px;
   margin: 1vh auto;
 }
 
 .vertical-divider {
-  width: 1px;
+  width: 0.5px;
   height: 85%;
   margin: auto 1vh;
 }
@@ -188,6 +188,34 @@ img {
   flex-grow: 1;
 }
 
+.statistics-list {
+  margin: 1vh 3vh 1vh 3vh;
+}
+
+.statistics-list > .horizontal-divider {
+  width: 98%;
+  color: #101010;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-row > span {
+  color: #45484a;
+  font-size: 2.5vh;
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.stat-row > span:last-child {
+  text-align: right;
+}
+
 .nav-button {
   width: 14vh;
   height: 14vh;
@@ -241,6 +269,10 @@ img {
   flex-direction: column;
 }
 
+#statistics-modal > div, #settings-modal > div {
+  max-width: 100vh;
+}
+
 #continue-button, #ans-feedback-box {
   background-color: #92c99a;
   height: 12vh;
@@ -289,10 +321,6 @@ img {
   border-radius: 4vh;
   background: transparent;
   color: #45484a;
-}
-
-#statistics-list {
-  margin: 1vh 3vh 1vh 3vh;
 }
 
 input:placeholder-shown {
