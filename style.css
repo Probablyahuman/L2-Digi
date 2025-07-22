@@ -12,9 +12,13 @@ body {
   flex-direction: column;
 }
 
-p {
+p, button, .small-text {
   color: #45484a;
   font-size: 2.5vh;
+}
+
+.small-text {
+  margin: 0;
 }
 
 h3 {
@@ -90,6 +94,10 @@ img {
 
 #ans-feedback-modal-content {
   background-color: #92c99a; /*Will be changed depending on whether last question answered correctly*/
+}
+
+.settings-content-content {
+  margin: 1vh 3vh 1vh 3vh;
 }
 
 .modal-header {
@@ -264,6 +272,16 @@ img {
   height: 7.5vh;
 }
 
+.no-top-margin {
+  margin-top: 0;
+}
+
+.space-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #alternate-answer-box {
   display: flex;
   flex-direction: column;
@@ -278,6 +296,17 @@ img {
   height: 12vh;
   width: auto;
   border-radius: 6vh;
+  border-style: solid;
+  border-color: #45484a;
+  border-width: 0.2vh;
+  padding: 0.5vh;
+}
+
+#set-open-button {
+  background-color: #f0f0f0;
+  border-radius: 1vh;
+  height: 5vh;
+  width: auto;
   border-style: solid;
   border-color: #45484a;
   border-width: 0.2vh;
