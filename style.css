@@ -55,6 +55,16 @@ img {
   /* Filter calculated with https://codepen.io/sosuke/pen/Pjoqqp with target colour as #45484a */
 }
 
+.main, .content, #question {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#question {
+  justify-content: center;
+}
+
 .w3-modal {
   padding: 0;
   position: fixed;
@@ -222,10 +232,6 @@ img {
   margin-right: 0;
 }
 
-.main {
-  flex: 1 0;
-}
-
 .tick-box {
   float: left;
   background-color: #f0f0f0;
@@ -330,7 +336,7 @@ img {
 }
 
 #ans-input {
-  margin: 2vh 4vh 0 4vh;
+  margin: 0 4vh 0 0;
   padding: 3vh;
   font-size: 5vh;
   width: calc(100% - 8vh);
@@ -338,6 +344,10 @@ img {
   border-radius: 4vh;
   background: transparent;
   color: #45484a;
+}
+
+#instruction {
+  margin-top: 0;
 }
 
 input:placeholder-shown {
