@@ -55,7 +55,7 @@ img {
   /* Filter calculated with https://codepen.io/sosuke/pen/Pjoqqp with target colour as #45484a */
 }
 
-.main, .content, #question {
+.main, .content {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -138,7 +138,7 @@ img {
 }
 
 .ans-feedback-info {
-  flex-grow: 1;
+  flex: 1;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: 1fr auto 1fr;
@@ -190,8 +190,14 @@ img {
   
 }
 
+.small-spacer {
+  flex: 0.85;
+  max-height: 10vh;
+  /*Spacer to grow smaller than standard spacer*/
+}
+
 .spacer {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .statistics-list {
