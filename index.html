@@ -1,10 +1,4 @@
 <!doctype html>
-<!--
-
-needs trialling by potential users
-discuss how improvements made (write eval)
-
--->
 <html lang="en">
 
 <head>
@@ -16,8 +10,11 @@ discuss how improvements made (write eval)
 
 <body>
 
+<!-- Modal for information on how the user did with the last question: -->
 <div class = "w3-modal w3-animate-top" id = "ans-feedback-modal">
+  <!-- Shadow overlay effect that includes modal content within it -->
   <div class = "w3-modal-content" id = "ans-feedback-modal-content">
+    <!-- Modal itself -->
     <div class="modal-header">
       <span class = "tick-box small-tick">
         &#10003;
@@ -59,6 +56,7 @@ discuss how improvements made (write eval)
   </div>
 </div>
 
+<!-- Modal for all of users statistics to be displayed: (these are saved as data as part of each set) -->
 <div class = "w3-modal w3-animate-top" id = "statistics-modal">
   <div class = "w3-modal-content">
     <div class="modal-header">
@@ -106,6 +104,7 @@ discuss how improvements made (write eval)
   </div>
 </div>
 
+<!-- Modal to change set, give hotkeys and credits. Program must be made first to include other customisable options. -->
 <div class = "w3-modal w3-animate-top" id = "settings-modal">
   <div class = "w3-modal-content">
     <div class="modal-header">
@@ -159,6 +158,7 @@ discuss how improvements made (write eval)
     and force the footer to bottom of page-->
   
 <nav>
+  <!-- Includes all modals options, some of which have further links. -->
   <button id = "ans-feedback-box" onclick = "modalDisplay('ans-feedback-modal')" accesskey="i">
     <span class = "tick-box">
       &#10003;
@@ -166,20 +166,19 @@ discuss how improvements made (write eval)
     <span id = "ans-feedback">Last answer correct,<br>click for more info.</span>
   </button>
   
-  <div class = "nav-box shift-to-right">
-    
-  </div>
-  
-  <button class = "nav-button" id="chart-button" accesskey = "t" onclick = "modalDisplay('statistics-modal')">
+  <div class = "shift-to-right">
+    <button class = "nav-button" id="chart-button" accesskey = "t" onclick = "modalDisplay('statistics-modal')">
     <img src="icons/chart.svg" alt="Statistics" class="icon">
   </button>
   
   <button class = "nav-button" id="gear-button" accesskey = "s" onclick = "modalDisplay('settings-modal')">
     <img src = "icons/gear.svg" alt="Settings" class="icon">
   </button>
+  </div>
 </nav>
 
 <section class = "content">
+  <!-- The quiz instruction (task) and question content -->
   <h3 id = "instruction">Enter the word for:</h3>
   <div class = "small-spacer"></div>
   <h2 id = "question">"A particular instance of something that is representative of a group, or an illustration of something that's been generally described."</h2>
@@ -189,6 +188,7 @@ discuss how improvements made (write eval)
 </div>
 
 <footer>
+  <!-- The answer entry section. Labeled footer as it is always shifted to bottom of screen. -->
   <input type = "text" id = "ans-input" placeholder = "Your answer here..." autofocus>
   <button id = "continue-button" onclick = "ansSubmission(ansInput)">
     <span id = "continue-text">Continue</span>

@@ -21,7 +21,7 @@ h3 {
   text-align: center;
   color: #45484a;
   font-size: 5vh;
-  margin: -1.5vh 3vw -1vh 3vw;
+  margin: -1.5vh 3vw -1vh 3vw; /*Negative margin to circumvent excessive font spacing above and below*/
 }
 
 h2 {
@@ -42,6 +42,15 @@ nav, footer {
   padding: 4vh;
   display: flex;
   width: 100%;
+  
+  gap: 2vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav {
+  flex-wrap: wrap-reverse;
+  /*So that answer feedback button wraps down instead of settings and statistics button */
 }
 
 button {
@@ -75,8 +84,9 @@ img {
 }
 
 .w3-modal.fade-out {
+  /*Class applied while modal has been closed and is fading out */
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /*So that modal can't be interacted with while fading out */
 }
 
 .w3-modal-content {
@@ -91,7 +101,7 @@ img {
 }
 
 #ans-feedback-modal-content {
-  background-color: #92c99a; /*Will be changed depending on whether last question answered correctly*/
+  background-color: #92c99a; /*Will be changed depending on whether last question answered correctly */
 }
 
 .settings-content-content {
@@ -108,11 +118,12 @@ img {
 
 .horizontal-divider {
   width: 85%;
-  height: 0.5px;
-  margin: 1vh auto;
+  height: 0.5px; /*This displays with consistent thickness whereas 1px does not; 1px causes fractional pixel rendering issues */
+  margin: 1vh auto; /*Centre in long axis and leave small gap in short axis */
 }
 
 .vertical-divider {
+  /* Same as horizontal-divider with axis swapped */
   width: 0.5px;
   height: 85%;
   margin: auto 1vh;
@@ -148,10 +159,10 @@ img {
   display: grid;
   grid-template-rows: auto;
   grid-auto-rows: 1fr;
-  
+  /*To ensure evenly spaced gaps between alternate answers */
 }
 
-.ans-feedback-info p {
+.ans-feedback-info > p {
   margin: 0.5vh 0 0.5vh 0;
   display: flex;
   align-items: center;
@@ -236,9 +247,11 @@ img {
 .shift-to-right {
   margin-left: auto;
   margin-right: 0;
+  display: flex;
 }
 
 .tick-box {
+  /*Will be changed between tick and cross depending on whether last question answered correctly */
   float: left;
   background-color: #f0f0f0;
   height: 10vh;
@@ -292,7 +305,7 @@ img {
 }
 
 #continue-button, #ans-feedback-box {
-  background-color: #92c99a;
+  background-color: #92c99a; /*Will be changed depending on whether last question answered correctly */
   height: 12vh;
   width: auto;
   border-radius: 6vh;
@@ -300,6 +313,8 @@ img {
   border-color: #45484a;
   border-width: 0.2vh;
   padding: 0.5vh;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 #set-open-button {
@@ -323,11 +338,17 @@ img {
 }
 
 #ans-feedback, #continue-text {
-  float: right;   /*Only needed for ans-feedback, does not affect continue-text*/
   margin: 1.2vh;
   text-align: left;
   vertical-align: middle;
   font-size: 2.8vh;
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+#ans-feedback {
+  float: right;
 }
 
 #continue-text {
@@ -342,10 +363,9 @@ img {
 }
 
 #ans-input {
-  margin: 0 4vh 0 0;
   padding: 3vh;
   font-size: 5vh;
-  width: calc(100% - 8vh);
+  flex: 1 0 30vw;
   height: 12vh;
   border-radius: 4vh;
   background: transparent;
@@ -362,4 +382,16 @@ input:placeholder-shown {
 
 .modal-close:hover {
   background-color: rgba(128, 128, 128, 0.2);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* Modifications for portrait aspect ratios, e.g. phones */
+    h2 {
+      font-size: 5vh;
+      line-height: 6vh;
+    }
+    
+    #ans-input {
+      font-size: 3vh;
+    }
 }
