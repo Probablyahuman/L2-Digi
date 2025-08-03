@@ -14,3 +14,5 @@ Relevant links:
 [Prototypes](https://docs.google.com/presentation/d/1_-Oi6vaB1xt0N_Uyckq-zbkkAYZ_Qh9EEUM2RDUebkM/edit#slide=id.p)
 
 [Relevant Drive Folder](https://drive.google.com/drive/u/0/folders/1JU2eAhpaFh0kGX3CtP2GVOMkwRiNAUkU)
+
+[Evaluation](https://docs.google.com/document/d/19aIaOJeRy6r_4Sjm7eefT3IPOK11uaQDLTjGAjfiobM/edit?tab=t.0)
