@@ -3,7 +3,9 @@ My NCEA level 2 digital technologies project.
 
 Attributions:
 "Chart Business Graph Statistics" icon by Artyom Khamitov from Iconfinder - licensed under Creative Commons 3.0 License.
+
 "Gear icon" icon by Ionicons from Iconfinder - licensed under MIT License.
+
 
 Relevant links:
 
